@@ -24,20 +24,23 @@ Todo el procesamiento ocurre **100% en el navegador del usuario (Client-Side)** 
 
 **Demo en vivo:** [unfantasmaenelsistema.github.io/GhostBountyStudio](https://unfantasmaenelsistema.github.io/GhostBountyStudio/)
 
-<table>
-<tr>
-<td width="50%" align="center"><b>Dashboard de campaña y ROI</b><br><img src="img/01-dashboard.jpg" width="420" height="280"></td>
-<td width="50%" align="center"><b>Programas y criterio de pivote</b><br><img src="img/02-programas.jpg" width="420" height="280"></td>
-</tr>
-<tr>
-<td width="50%" align="center"><b>Recon Tracker</b><br><img src="img/03-recon-tracker.jpg" width="420" height="280"></td>
-<td width="50%" align="center"><b>Triage Board (Kanban)</b><br><img src="img/04-triage-board.jpg" width="420" height="280"></td>
-</tr>
-<tr>
-<td width="50%" align="center"><b>Editor de reportes (split-screen)</b><br><img src="img/05-report-editor.jpg" width="420" height="280"></td>
-<td width="50%" align="center"><b>Calculadora oficial CVSS v3.1</b><br><img src="img/06-cvss-calculator.jpg" width="420" height="280"></td>
-</tr>
-</table>
+**Dashboard de campaña y ROI**
+![Dashboard](img/01-dashboard.jpg)
+
+**Programas y criterio de pivote**
+![Programas](img/02-programas.jpg)
+
+**Recon Tracker**
+![Recon Tracker](img/03-recon-tracker.jpg)
+
+**Triage Board (Kanban)**
+![Triage Board](img/04-triage-board.jpg)
+
+**Editor de reportes (split-screen)**
+![Editor de reportes](img/05-report-editor.jpg)
+
+**Calculadora oficial CVSS v3.1**
+![Calculadora CVSS](img/06-cvss-calculator.jpg)
 
 ### 1. 📊 Dashboard de Campaña y Calculadora Financiera de ROI
 - **Métricas de Recompensas:** Comparativa en tiempo real de recompensas esperadas vs. pagadas (*Payout Efficiency Ratio*).
