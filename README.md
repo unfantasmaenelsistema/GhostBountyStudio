@@ -26,16 +26,16 @@ Todo el procesamiento ocurre **100% en el navegador del usuario (Client-Side)** 
 
 <table>
 <tr>
-<td align="center"><b>Dashboard de campaña y ROI</b><br><img src="img/01-dashboard.jpg" width="420"></td>
-<td align="center"><b>Programas y criterio de pivote</b><br><img src="img/02-programas.jpg" width="420"></td>
+<td width="50%" align="center"><b>Dashboard de campaña y ROI</b><br><img src="img/01-dashboard.jpg" width="420" height="280"></td>
+<td width="50%" align="center"><b>Programas y criterio de pivote</b><br><img src="img/02-programas.jpg" width="420" height="280"></td>
 </tr>
 <tr>
-<td align="center"><b>Recon Tracker</b><br><img src="img/03-recon-tracker.jpg" width="420"></td>
-<td align="center"><b>Triage Board (Kanban)</b><br><img src="img/04-triage-board.jpg" width="420"></td>
+<td width="50%" align="center"><b>Recon Tracker</b><br><img src="img/03-recon-tracker.jpg" width="420" height="280"></td>
+<td width="50%" align="center"><b>Triage Board (Kanban)</b><br><img src="img/04-triage-board.jpg" width="420" height="280"></td>
 </tr>
 <tr>
-<td align="center"><b>Editor de reportes (split-screen)</b><br><img src="img/05-report-editor.jpg" width="420"></td>
-<td align="center"><b>Calculadora oficial CVSS v3.1</b><br><img src="img/06-cvss-calculator.jpg" width="420"></td>
+<td width="50%" align="center"><b>Editor de reportes (split-screen)</b><br><img src="img/05-report-editor.jpg" width="420" height="280"></td>
+<td width="50%" align="center"><b>Calculadora oficial CVSS v3.1</b><br><img src="img/06-cvss-calculator.jpg" width="420" height="280"></td>
 </tr>
 </table>
 
