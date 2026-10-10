@@ -25,22 +25,22 @@ Todo el procesamiento ocurre **100% en el navegador del usuario (Client-Side)** 
 **Demo en vivo:** [unfantasmaenelsistema.github.io/GhostBountyStudio](https://unfantasmaenelsistema.github.io/GhostBountyStudio/)
 
 **Dashboard de campaña y ROI**
-![Dashboard](img/01-dashboard.jpg)
+![Dashboard](img/dashboard-01.jpg)
 
 **Programas y criterio de pivote**
-![Programas](img/02-programas.jpg)
+![Programas](img/dashboard-02.jpg)
 
 **Recon Tracker**
-![Recon Tracker](img/03-recon-tracker.jpg)
+![Recon Tracker](img/dashboard-03.jpg)
 
 **Triage Board (Kanban)**
-![Triage Board](img/04-triage-board.jpg)
+![Triage Board](img/dashboard-04.jpg)
 
 **Editor de reportes (split-screen)**
-![Editor de reportes](img/05-report-editor.jpg)
+![Editor de reportes](img/dashboard-05.jpg)
 
 **Calculadora oficial CVSS v3.1**
-![Calculadora CVSS](img/06-cvss-calculator.jpg)
+![Calculadora CVSS](img/dashboard-06.jpg)
 
 ### 1. 📊 Dashboard de Campaña y Calculadora Financiera de ROI
 - **Métricas de Recompensas:** Comparativa en tiempo real de recompensas esperadas vs. pagadas (*Payout Efficiency Ratio*).
