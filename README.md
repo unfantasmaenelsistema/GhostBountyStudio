@@ -8,6 +8,7 @@
 [![Framework](https://img.shields.io/badge/stack-React%2019%20%7C%20TypeScript%20%7C%20TailwindCSS%20v4-purple.svg?style=flat-square)]()
 [![CVSS](https://img.shields.io/badge/standard-FIRST%20CVSS%20v3.1-orange.svg?style=flat-square)]()
 [![Privacy](https://img.shields.io/badge/privacy-100%25%20Client--Side%20%7C%20Local-emerald.svg?style=flat-square)]()
+[![License](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](LICENSE)
 
 ---
 
@@ -23,17 +24,20 @@ Todo el procesamiento ocurre **100% en el navegador del usuario (Client-Side)** 
 
 **Demo en vivo:** [unfantasmaenelsistema.github.io/GhostBountyStudio](https://unfantasmaenelsistema.github.io/GhostBountyStudio/)
 
-| Dashboard de campaña y ROI | Programas y criterio de pivote |
-|---|---|
-| ![Dashboard](img/01-dashboard.jpg) | ![Programas](img/02-programas.jpg) |
-
-| Recon Tracker | Triage Board (Kanban) |
-|---|---|
-| ![Recon Tracker](img/03-recon-tracker.jpg) | ![Triage Board](img/04-triage-board.jpg) |
-
-| Editor de reportes (split-screen) | Calculadora oficial CVSS v3.1 |
-|---|---|
-| ![Editor de reportes](img/05-report-editor.jpg) | ![Calculadora CVSS](img/06-cvss-calculator.jpg) |
+<table>
+<tr>
+<td align="center"><b>Dashboard de campaña y ROI</b><br><img src="img/01-dashboard.jpg" width="420"></td>
+<td align="center"><b>Programas y criterio de pivote</b><br><img src="img/02-programas.jpg" width="420"></td>
+</tr>
+<tr>
+<td align="center"><b>Recon Tracker</b><br><img src="img/03-recon-tracker.jpg" width="420"></td>
+<td align="center"><b>Triage Board (Kanban)</b><br><img src="img/04-triage-board.jpg" width="420"></td>
+</tr>
+<tr>
+<td align="center"><b>Editor de reportes (split-screen)</b><br><img src="img/05-report-editor.jpg" width="420"></td>
+<td align="center"><b>Calculadora oficial CVSS v3.1</b><br><img src="img/06-cvss-calculator.jpg" width="420"></td>
+</tr>
+</table>
 
 ### 1. 📊 Dashboard de Campaña y Calculadora Financiera de ROI
 - **Métricas de Recompensas:** Comparativa en tiempo real de recompensas esperadas vs. pagadas (*Payout Efficiency Ratio*).
@@ -121,5 +125,5 @@ bun run build
 
 ## 📄 Licencia
 
-Desarrollado con dedicación para la comunidad de seguridad y hacking ético por **Un Fantasma en el Sistema**.  
+Licencia MIT — ver [`LICENSE`](LICENSE). Desarrollado con dedicación para la comunidad de seguridad y hacking ético por **Un Fantasma en el Sistema**.  
 Consulta el sitio web oficial: [unfantasmaenelsistema.com](https://unfantasmaenelsistema.com).
