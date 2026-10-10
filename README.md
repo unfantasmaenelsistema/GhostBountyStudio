@@ -21,18 +21,19 @@ Todo el procesamiento ocurre **100% en el navegador del usuario (Client-Side)** 
 
 ## 📸 Vista de la Plataforma y Módulos
 
-```
-+-----------------------------------------------------------------------------------------+
-|  👻 GHOST BOUNTY STUDIO                 [⚡ Calculadora CVSS] [💻 PoC Generator] [💾 Backup] |
-+-----------------------------------------------------------------------------------------+
-| [📊 Dashboard]      |  💰 ROI & BOUNTY CALCULATOR        🎯 ESTADÍSTICAS GLOBALES       |
-| [🎯 Programas]      |  Total Ganado: $18,450             Tasa Horaria Real: $153.75/hr  |
-| [🌐 Recon Tracker]  |  Esperado vs Pagado: 92% Ratio     Hallazgos Críticos: 7          |
-| [📋 Triage Board]   +-------------------------------------------------------------------+
-| [📝 Report Editor]  |  SPLIT-SCREEN REPORT GENERATOR CON VISTA PREVIA EN VIVO           |
-| [🧠 Metodología]    |  Formulario Markdown & HTTP Raw  ==>  Membrete Oficial & PDF A4   |
-+-----------------------------------------------------------------------------------------+
-```
+**Demo en vivo:** [unfantasmaenelsistema.github.io/GhostBountyStudio](https://unfantasmaenelsistema.github.io/GhostBountyStudio/)
+
+| Dashboard de campaña y ROI | Programas y criterio de pivote |
+|---|---|
+| ![Dashboard](img/01-dashboard.jpg) | ![Programas](img/02-programas.jpg) |
+
+| Recon Tracker | Triage Board (Kanban) |
+|---|---|
+| ![Recon Tracker](img/03-recon-tracker.jpg) | ![Triage Board](img/04-triage-board.jpg) |
+
+| Editor de reportes (split-screen) | Calculadora oficial CVSS v3.1 |
+|---|---|
+| ![Editor de reportes](img/05-report-editor.jpg) | ![Calculadora CVSS](img/06-cvss-calculator.jpg) |
 
 ### 1. 📊 Dashboard de Campaña y Calculadora Financiera de ROI
 - **Métricas de Recompensas:** Comparativa en tiempo real de recompensas esperadas vs. pagadas (*Payout Efficiency Ratio*).
@@ -70,44 +71,32 @@ Todo el procesamiento ocurre **100% en el navegador del usuario (Client-Side)** 
 
 ---
 
-## 🚀 Despliegue en GitHub Pages (Paso a Paso)
+## 🚀 Despliegue en GitHub Pages
 
-Este repositorio está **completamente optimizado y listo para GitHub Pages** sin necesidad de configurar servidores externos.
+Ya está desplegada y en vivo: **[unfantasmaenelsistema.github.io/GhostBountyStudio](https://unfantasmaenelsistema.github.io/GhostBountyStudio/)**, vía `.github/workflows/deploy.yml` (GitHub Actions + GitHub Pages, origen "GitHub Actions"). El workflow usa **Bun**, no npm/Node — el `package.json` original (`vite@8` + `esbuild@0.25` como devDependency fijada) tiene un conflicto real de peer-dependencies que npm bloquea y Bun resuelve sin problema; por eso el repo lleva `bun.lock` commiteado en vez de `package-lock.json`.
 
-### Opción A: Despliegue Automático con GitHub Actions (Recomendado)
+### Si haces un fork o clonas este repo para tu propia instancia
 
-El proyecto incluye el archivo `.github/workflows/deploy.yml`:
-
-1. **Crea un repositorio en GitHub** (público o privado).
-2. **Sube el código a tu repositorio:**
+1. **Instala dependencias y compila con Bun** (no uses `npm install`/`npm ci`, fallará):
    ```bash
-   git init
-   git add .
-   git commit -m "feat: release GhostBountyStudio v1.0"
-   git branch -M main
-   git remote add origin https://github.com/TU-USUARIO/TU-REPOSITORIO.git
+   bun install
+   bun run build
+   ```
+2. **Sube tu copia a tu propio repositorio:**
+   ```bash
+   git remote set-url origin https://github.com/TU-USUARIO/TU-REPOSITORIO.git
    git push -u origin main
    ```
-3. En GitHub, ve a **Settings** → **Pages**.
-4. En **Build and deployment** > **Source**, selecciona:
-   👉 **GitHub Actions**
-5. En pocos segundos, GitHub ejecutará el workflow y tu aplicación estará disponible en:
+3. En GitHub, ve a **Settings** → **Pages** → **Build and deployment** → **Source** → **GitHub Actions**.
+4. El workflow ya incluido (`oven-sh/setup-bun` + `bun install --frozen-lockfile` + `bun run build`) se encarga del resto. Tu copia quedará disponible en:
    `https://TU-USUARIO.github.io/TU-REPOSITORIO/`
 
----
-
-### Opción B: Construcción Local y Despliegue Manual
-
-Si prefieres compilar localmente y subir la rama `gh-pages`:
+### Despliegue manual a cualquier hosting estático
 
 ```bash
-# 1. Instalar dependencias
-npm install
-
-# 2. Generar el bundle de producción
-npm run build
-
-# La carpeta dist/ contiene la web estática lista para desplegar en cualquier hosting (GitHub Pages, Vercel, Netlify, Cloudflare Pages, S3).
+bun install
+bun run build
+# dist/ contiene la web estática: sirve igual en GitHub Pages, Vercel, Netlify, Cloudflare Pages o S3.
 ```
 
 ---
