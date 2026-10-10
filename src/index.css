@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply antialiased selection:bg-purple-500/30 selection:text-emerald-300;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Custom hacker terminal scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.6);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.25);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(168, 85, 247, 0.5);
+  }
+}
+
+/* Print / PDF generation styles */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm 14mm 12mm 14mm;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    font-size: 11pt !important;
+    line-height: 1.5 !important;
+  }
+
+  aside, header, footer, nav, .no-print {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+    height: auto !important;
+  }
+
+  .print-page {
+    display: block !important;
+    width: 100% !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .print-page .border,
+  .print-page .border-b,
+  .print-page .border-t,
+  .print-page .border-2 {
+    border-color: #cbd5e1 !important;
+  }
+
+  /* Prevent awkward page break cuts inside sections */
+  .page-break-avoid,
+  .print-page section,
+  .print-page table,
+  .print-page pre {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Force dark contrast on code blocks during print */
+  .print-page pre {
+    background-color: #0f172a !important;
+    color: #38bdf8 !important;
+    border: 1px solid #1e293b !important;
+    white-space: pre-wrap !important;
+    word-break: break-all !important;
+    font-size: 8.5pt !important;
+    padding: 10px !important;
+  }
+}

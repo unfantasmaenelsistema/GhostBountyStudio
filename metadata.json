@@ -1,0 +1,6 @@
+{
+  "name": "GhostBountyStudio",
+  "description": "Cuaderno de campaña interactivo y consola de seguridad para cazadores de bug bounty por Un Fantasma en el Sistema (unfantasmaenelsistema.com), con calculadora CVSS v3.1 oficial, recon tracker, triage board y copiloto de metodología.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

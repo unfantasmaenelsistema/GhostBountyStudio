@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/icono.png" />
+    <title>GhostBountyStudio - Un Fantasma en el Sistema</title>
+    <meta name="description" content="Cuaderno de campaña interactivo y consola de seguridad para cazadores de bug bounty por Un Fantasma en el Sistema (unfantasmaenelsistema.com), con calculadora CVSS v3.1 oficial, recon tracker, triage board y copiloto de metodología." />
+    <meta property="og:title" content="GhostBountyStudio - Un Fantasma en el Sistema" />
+    <meta property="og:description" content="Cuaderno de campaña interactivo y consola de seguridad para cazadores de bug bounty por Un Fantasma en el Sistema (unfantasmaenelsistema.com), con calculadora CVSS v3.1 oficial, recon tracker, triage board y copiloto de metodología." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      window.addEventListener('error', function(e) {
+        if (e.message && (e.message.includes('WebSocket') || e.message.includes('createWebSocketModuleRunnerTransport'))) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+        }
+      });
+      window.addEventListener('unhandledrejection', function(e) {
+        if (e.reason && String(e.reason).includes('WebSocket')) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
